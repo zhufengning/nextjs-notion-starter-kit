@@ -11,9 +11,10 @@ import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
-import { MyWaline } from './MyWaline'
-
 import styles from './styles.module.css'
+import Waline, { CRefProps } from '@montagejs/react-waline-client'
+import { useRef } from 'react'
+import { getURL } from 'next/dist/shared/lib/utils'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -36,9 +37,10 @@ export const FooterImpl: React.FC = () => {
     setHasMounted(true)
   }, [])
 
+  const ref = useRef<CRefProps>(null);
   return (
 
-    <><MyWaline serverURL='https://cm.zhufn.fun' path={url} />
+    <>{url}<Waline ref={ref} serverURL='https://cm.zhufn.fun' />
       <footer className={styles.footer}>
         <div className={styles.copyright}>Copyright 2022 {config.author}</div>
 

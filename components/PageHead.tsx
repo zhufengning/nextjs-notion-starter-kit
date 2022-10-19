@@ -31,11 +31,6 @@ export const PageHead: React.FC<
 
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
-      <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-      />
 
       {site && (
         <>
