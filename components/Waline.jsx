@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from '@waline/client';
 
-//import { WalineInstance, WalineInitOptions } from '@waline/client';
+import { WalineInstance} from '@waline/client';
 
 //export WalineOptions = Omit<WalineInitOptions, 'el'> & { path: string };
 
