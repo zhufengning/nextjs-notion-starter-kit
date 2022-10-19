@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from '@waline/client';
 
-import { WalineInstance} from '@waline/client';
+//import { WalineInstance} from '@waline/client';
 
 //export WalineOptions = Omit<WalineInitOptions, 'el'> & { path: string };
 
 export const Waline = (props) => {
-  const walineInstanceRef = useRef<WalineInstance | null>(null);
+  const walineInstanceRef = useRef();
   const containerRef = React.createRef();
 
   useEffect(() => {
     walineInstanceRef.current = init({
-      ...props,
       el: containerRef.current,
+      ...props
     });
 
     return () => walineInstanceRef.current?.destroy();
