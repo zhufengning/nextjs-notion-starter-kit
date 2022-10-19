@@ -5,7 +5,7 @@ import { init } from '@waline/client';
 
 //export WalineOptions = Omit<WalineInitOptions, 'el'> & { path: string };
 
-export const Waline = (props) => {
+export const MyWaline = (props) => {
   const walineInstanceRef = useRef();
   const containerRef = React.createRef();
 
