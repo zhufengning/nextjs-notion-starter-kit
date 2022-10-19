@@ -1,20 +1,10 @@
 {
-  "name": "Next.js Notion Starter Kit",
-  "short_name": "Starter Kit",
+  "name": "ZhuFN's Blog",
+  "short_name": "ZhuFN",
   "icons": [
     {
-      "src": "/favicon.png",
-      "type": "image/png",
-      "sizes": "32x32"
-    },
-    {
-      "src": "/favicon-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    },
-    {
-      "src": "/favicon-192x192.png",
-      "type": "image/png",
+      "src": "/favicon.jpeg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     }
   ],
