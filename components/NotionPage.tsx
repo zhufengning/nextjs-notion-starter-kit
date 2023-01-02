@@ -67,8 +67,7 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-swift.js'),
       import('prismjs/components/prism-wasm.js'),
       import('prismjs/components/prism-yaml.js'),
-      import('prismjs/components/prism-fsharp.js'),
-      import('prismjs/components/prism-ocaml.js')
+      import('prismjs/components/prism-fsharp.js')
     ])
     return m.Code
   })
@@ -243,7 +242,21 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const socialDescription =
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
-
+  //console.log(recordMap.block)
+  console.log("record map start")
+  try {
+    Object.keys(recordMap.block).forEach((key) => {
+      try {
+        if (recordMap.block[key].value.properties.language[0][0] === 'C++') {
+          recordMap.block[key].value.properties.language[0][0] = 'Cpp'
+        }
+        else if (recordMap.block[key].value.properties.language[0][0] === 'F#') {
+          recordMap.block[key].value.properties.language[0][0] = 'Fsharp'
+        }
+      console.log(recordMap.block[key].value)
+      } catch (_){}
+    })
+  } catch (_) {}
   return (
     <>
       <PageHead
