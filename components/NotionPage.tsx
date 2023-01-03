@@ -243,7 +243,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
   //console.log(recordMap.block)
-  console.log("record map start")
+  //console.log("record map start")
   try {
     Object.keys(recordMap.block).forEach((key) => {
       try {
@@ -253,7 +253,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         else if (recordMap.block[key].value.properties.language[0][0] === 'F#') {
           recordMap.block[key].value.properties.language[0][0] = 'Fsharp'
         }
-      console.log(recordMap.block[key].value)
+      //console.log(recordMap.block[key].value)
       } catch (_){}
     })
   } catch (_) {}
