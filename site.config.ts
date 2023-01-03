@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'BuringStraw',
 
   // open graph metadata (optional)
-  description: 'ju ruo',
+  description: 'ZhuFN或者BuringStraw的博客。学信安的。旧文章地址：https://zhufn.fun',
 
   // social usernames (optional)
 //  twitter: 'transitive_bs',
