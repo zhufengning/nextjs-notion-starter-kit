@@ -44,6 +44,7 @@ export const NotionPageHeader: React.FC<{
 
   return (
     <header className='notion-header'>
+      （代码块若不显示请刷新）
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
 
