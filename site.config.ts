@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'ZhuFN\'s Blog（代码块若不显示请刷新）',
+  name: 'ZhuFN\'s Blog',
   domain: 'zhufn.fun',
   author: 'BuringStraw',
 
