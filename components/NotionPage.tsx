@@ -259,6 +259,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   } catch (_) {}
   return (
     <>
+    （代码块若不显示请刷新）
       <PageHead
         pageId={pageId}
         site={site}
