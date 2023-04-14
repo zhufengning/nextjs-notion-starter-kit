@@ -94,6 +94,7 @@
   border-bottom: 0 none;
   transition: filter 150ms linear;
   filter: none;
+  background: url('/101733274_p0.png');
 }
 
 .notion-collection-card:hover .notion-collection-card-cover {
